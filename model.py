@@ -35,4 +35,7 @@ def predict_email(text):
     return f"Spam ({prob:.2f})" if prob > 0.5 else f"Not Spam ({prob:.2f})"
 
 email = "You are a winner, you are won free iphone"
-print("\nTest Email Prediction:", predict_email(email))
+print(f"\n{email}\nTest Email Prediction:", predict_email(email))
+
+email = "hey David! , how are you brother..."
+print(f"\n{email}\nTest Email Prediction:", predict_email(email))
